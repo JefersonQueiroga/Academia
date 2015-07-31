@@ -5,13 +5,15 @@
     xmlns:f="http://java.sun.com/jsf/core">
 <h:head></h:head>
 <h:body>
-    <H2>
-        <h:outputText value="Cadastro de Cidade" />
-        <h:panelGrid columns="2">
-        	<h:outputText value="Nome: "/>
-           	<h:inputText />       	        
-        </h:panelGrid>
-        <h:commandButton value="Cadastrar" action="#{ cidadeMBean.cadastrarCidade }"/>
-    </H2>
+	<h:form>
+		  
+		       <h:outputText value="Cadastro de Cidade" />
+		       <h:panelGrid columns="2">
+		       	<h:outputText value="Nome: "/>
+		          	<h:inputText value="#{ cidadeMBean.cidade.nome }" />       	        
+		       </h:panelGrid>
+		       <h:commandButton value="Cadastrar" action="#{ cidadeMBean.cadastrarCidade }"/>
+		  
+    </h:form>
 </h:body>
 </html>

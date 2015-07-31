@@ -25,7 +25,7 @@ public class Academia implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue
 	private long id;
 	
 	private String nome;
