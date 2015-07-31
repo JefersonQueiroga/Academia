@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+<h:head></h:head>
+<h:body>
+	<h:form>
+		  
+		       <h:outputText value="Cadastro Academia" />
+		       <h:panelGrid columns="2">
+		       		<h:outputText value="Nome:"/>
+		          	<h:inputText value="#{ academiaMBean.academia.nome }" />
+					
+					<h:outputText value="Cidade"/>
+					<h:selectOneMenu value="#{ academiaMBean.academia.cidade.id }"  >
+						<f:selectItems value="#{academiaMBean.cidades}" var="cidade" itemLabel="#{cidade.nome}" itemValue="#{cidade.id}"/> 
+					</h:selectOneMenu>
+		          		          	       	        
+		       </h:panelGrid>
+		       <h:commandButton value="Cadastrar" action="#{ academiaMBean.cadastrarCidade}"/>
+		  
+    </h:form>
+</h:body>
+</html>

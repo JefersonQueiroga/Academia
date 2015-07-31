@@ -9,8 +9,12 @@
 		  
 		       <h:outputText value="Cadastro de Cidade" />
 		       <h:panelGrid columns="2">
-		       	<h:outputText value="Nome: "/>
-		          	<h:inputText value="#{ cidadeMBean.cidade.nome }" />       	        
+		       		<h:outputText value="Nome: "/>
+		          	<h:inputText value="#{ cidadeMBean.cidade.nome }" />
+					
+					<h:outputText value="Estado: "/>
+		          	<h:inputText value="#{ cidadeMBean.cidade.estado }" />
+		          		          	       	        
 		       </h:panelGrid>
 		       <h:commandButton value="Cadastrar" action="#{ cidadeMBean.cadastrarCidade }"/>
 		  

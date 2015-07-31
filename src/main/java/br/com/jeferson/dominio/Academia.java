@@ -61,6 +61,14 @@ public class Academia implements Serializable {
 	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
 	}
+
+	public Date getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
 	
 	
 	
