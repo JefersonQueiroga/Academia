@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+<h:head></h:head>
+<h:body>
+    <H2>
+        <h:outputText value="Cadastro de Cidade" />
+        <h:panelGrid columns="2">
+        	<h:outputText value="Nome: "/>
+           	<h:inputText />       	        
+        </h:panelGrid>
+        <h:commandButton value="Cadastrar" action="#{ cidadeMBean.cadastrarCidade }"/>
+    </H2>
+</h:body>
+</html>
